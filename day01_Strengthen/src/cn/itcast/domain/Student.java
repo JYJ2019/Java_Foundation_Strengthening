@@ -7,4 +7,7 @@ package cn.itcast.domain;
  * @Version 1.0
  */
 public class Student {
+    public void sleep() {
+        System.out.println("sleep...");
+    }
 }
