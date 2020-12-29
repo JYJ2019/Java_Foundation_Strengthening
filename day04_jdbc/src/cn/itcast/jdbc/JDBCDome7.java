@@ -3,35 +3,28 @@ package cn.itcast.jdbc;
 import java.sql.*;
 
 /**
- * @Description：JDBC_ResultSet基本使用
+ * @Description：JDBC_ResultSet遍历结果集
  * @Author 金宇佳
- * @Date 2020/12/29 10:38
+ * @Date 2020/12/29 11:32
  * @Version 1.0
  */
-public class JDBCDemo6 {
+public class JDBCDome7 {
     public static void main(String[] args) {
         Connection conn = null;
         Statement stmt = null;
         ResultSet resultSet = null;
         try {
-            //1.注册驱动
             Class.forName("com.mysql.jdbc.Driver");
-            //2.获取连接对象
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db3", "root", "root");
-            //3.定义sql
             String sql = "SELECT * FROM account";
-            //4.获取执行sql对象
             stmt = conn.createStatement();
-            //5.执行sql
             resultSet = stmt.executeQuery(sql);
-            //6.处理结果
-            //6.1让游标向下移动一行
-            resultSet.next();
-            //6.2获取数据
-            int id = resultSet.getInt(1);
-            String name = resultSet.getString("NAME");
-            String balance = resultSet.getString("balance");
-            System.out.println(id + "---" + name + "---" + balance);
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("NAME");
+                String balance = resultSet.getString("balance");
+                System.out.println(id + "---" + name + "---" + balance);
+            }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
