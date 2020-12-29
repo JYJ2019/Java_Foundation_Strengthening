@@ -11,7 +11,7 @@ import java.sql.Statement;
  * @Date 2020/12/28 19:14
  * @Version 1.0
  */
-public class JDBCDemo02 {
+public class JDBCDemo2 {
     public static void main(String[] args) {
         Statement stmt = null;
         Connection conn = null;
