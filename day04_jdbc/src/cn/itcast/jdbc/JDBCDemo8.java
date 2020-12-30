@@ -13,9 +13,9 @@ import java.util.List;
  * @Date 2020/12/29 15:10
  * @Version 1.0
  */
-public class JDBCDome8 {
+public class JDBCDemo8 {
     public static void main(String[] args) {
-        List<Emp> list = new JDBCDome8().findAll2();
+        List<Emp> list = new JDBCDemo8().findAll2();
         System.out.println(list);
         System.out.println(list.size());
     }

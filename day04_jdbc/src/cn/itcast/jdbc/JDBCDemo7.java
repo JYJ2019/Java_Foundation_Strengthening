@@ -8,7 +8,7 @@ import java.sql.*;
  * @Date 2020/12/29 11:32
  * @Version 1.0
  */
-public class JDBCDome7 {
+public class JDBCDemo7 {
     public static void main(String[] args) {
         Connection conn = null;
         Statement stmt = null;
