@@ -1,4 +1,4 @@
-package cn.itcast.datasource.utils;
+package cn.itcast.utils;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 

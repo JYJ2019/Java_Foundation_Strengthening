@@ -1,6 +1,6 @@
 package cn.itcast.datasource.druid;
 
-import cn.itcast.datasource.utils.JDBCUtils;
+import cn.itcast.utils.JDBCUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
