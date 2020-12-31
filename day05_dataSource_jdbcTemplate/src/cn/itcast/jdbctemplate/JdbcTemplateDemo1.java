@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
  * @Date 2020/12/31 11:03
  * @Version 1.0
  */
-public class jdbcTemplateDemo1 {
+public class JdbcTemplateDemo1 {
     public static void main(String[] args) {
         //1.导入jar包
         //2.创建JDBCTemplate对象
