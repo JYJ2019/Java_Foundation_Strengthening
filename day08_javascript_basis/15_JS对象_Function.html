@@ -27,10 +27,6 @@
                     4. 在方法声明中有一个隐藏的内置对象（数组），arguments,封装所有的实际参数
                 5. 调用：
                     方法名称(实际参数列表);
-
-
-
-
          *
          */
 
@@ -83,14 +79,14 @@
          * 求任意个数的和
          */
         function add (){
-           var sum = 0;
-            for (var i = 0; i < arguments.length; i++) {
+            let sum = 0;
+            for (let i = 0; i < arguments.length; i++) {
                 sum += arguments[i];
             }
             return sum;
         }
 
-        var sum = add(1,2,3,4);
+        const sum = add(1, 2, 3, 4);
         alert(sum);
         //add(1,3);
 
