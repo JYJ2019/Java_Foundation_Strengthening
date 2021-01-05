@@ -10,7 +10,7 @@
 <body>
 
     <img id="img" src="img/banner_1.jpg" width="100%">
-
+    <input type="button" id="back" value="后退">
     <script>
         /*
             分析：
@@ -37,6 +37,16 @@
 
         //2.定义定时器
         setInterval(fun,3000);
+
+
+        //1.获取按钮
+        var back = document.getElementById("back");
+        //2.绑定单机事件
+        back.onclick = function(){
+            //后退
+           // history.back();
+            history.go(-1);
+        }
 
     </script>
 </body>
